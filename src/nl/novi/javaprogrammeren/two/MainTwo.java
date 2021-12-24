@@ -4,10 +4,12 @@ import java.util.Random;
 
 public class MainTwo {
     public static void main(String[] args) {
+        int totalSum = 0;
         for (int i = 0; i < 10; i++) {
-            int totalsum = 0;
             Random random = new Random();
-            totalsum = totalsum + random.nextInt();
+//            totalSum = totalSum + random.nextInt();
+            totalSum += random.nextInt();
         }
+        System.out.println("De som van alle random-getallen is: " + totalSum);
     }
 }
